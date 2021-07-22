@@ -7,8 +7,20 @@ namespace ruan.console.csharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What is your name?");
-            chamarNome saudar = new chamarNome("Ruan");
+            try
+            {
+                // Verifica se foi repassado argumentos
+               if (args.Length == 0) {
+                    throw new ArgumentException("Necessario que sejam fornecidos parametros!");
+            } else
+            {
+                chamarNome saudar = new chamarNome(args[0]);
+            } 
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
         }
     }
 }
