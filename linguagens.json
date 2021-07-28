@@ -1,8 +1,10 @@
 {
-  "pt-br": {
-    "criacaoPersonagem": {
-      "apresentaJogo": "Bem vindo novato!",
-      "perguntaNome": "Aventureiro, qual e o seu nome?"
-    }
-  }
+  "us": [
+    "Welcome newbie!",
+    "Adventurer, what's your name?"
+  ],
+   "pt-br": [
+    "Bem vindo novato!",
+    "Aventureiro, qual e o seu nome?"
+   ]
 }

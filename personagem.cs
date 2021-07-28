@@ -15,7 +15,7 @@ namespace personagem
     }
     public int criarNovoPersonagem (string nome) {
       // Questionaario para preenchimento das afinidades iniciais
-      Console.WriteLine("Aventureiro, qual eh o seu nome?"); 
+      Console.WriteLine("Aventureiro, qual eh o seu nome?");
       return 200;
     }
   }

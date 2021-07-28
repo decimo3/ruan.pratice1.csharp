@@ -1,12 +1,20 @@
 using System;
 using System.IO;
-using System.Text.Json;
 namespace linguagens
 {
     public class traducoes {
-        public string getText (string texto) {
-            string jsonString = File.ReadAllText("linguagens.json");
-            return "some text";
+        public traducoes (string lang) {
+            string[] linhas = new string[100];
+            int counter = 0;
+            string line;
+            // Read the file and display it line by line.  
+            System.IO.StreamReader file = new System.IO.StreamReader(@"./lang/" + lang + ".txt");
+            while((line = file.ReadLine()) != null)
+            {
+                linhas[counter] = line;
+                counter++;
+            }
+            file.Close();
         }
     }
 }
