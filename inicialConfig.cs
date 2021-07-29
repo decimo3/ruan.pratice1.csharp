@@ -28,9 +28,11 @@ namespace configuracoes
     }
     private void getConfiguracao()
     {
-      var counter = 0;
-      string line;
-      // Read the file and display it line by line.  
+      if (!File.Exists(@"./config.ini"))
+      {
+        var counter = 0;
+        string line;
+        // Read the file and display it line by line.  
         StreamReader file = new StreamReader(@"./config.ini");
         while((line = file.ReadLine()) != null)
         {
@@ -43,12 +45,19 @@ namespace configuracoes
           counter++;
         }
         file.Close();
-    }
+      } else {
+        throw new InvalidOperationException("Config file not found!");
+      }
+    } 
     private void setConfiguracao()
     {
-      StreamReader file = new StreamReader(@"./config.ini");
-      Console.WriteLine("Config file not found!");
-      file.Close();
+      StreamWriter arquivo = File.AppendText(@"./config.ini");
+        /*
+        Console.Write("");
+        //TODO: Questionario para registrar configuracoes basicas;
+        arquivo.WriteLine("");
+        */
+      arquivo.Close();
     }
     public string getLanguage () {
       return language;
