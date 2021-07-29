@@ -1,4 +1,4 @@
-﻿using System;
+﻿using configuracoes;
 using linguagens; 
 
 namespace ruan.console.csharp
@@ -8,7 +8,8 @@ namespace ruan.console.csharp
     static void Main(string[] args)
     {
       // Console.WriteLine("Do nothing");
-      var traduco = new traducoes("pt-br");
+      var configuracao = new configInicial();
+      var traducao = new traducoes(configuracao.getLanguage());
     }
   }
 }

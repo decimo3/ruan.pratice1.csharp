@@ -1,2 +1,4 @@
 Bem vindo novato!
 Aventureiro, qual e o seu nome?
+Configuraçoes salvas com sucesso!
+Configuraçoes carregadas com sucesso!
