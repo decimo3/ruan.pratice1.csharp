@@ -28,7 +28,7 @@ namespace configuracoes
     }
     private void getConfiguracao()
     {
-      if (!File.Exists(@"./config.ini"))
+      if (File.Exists(@"./config.ini"))
       {
         var counter = 0;
         string line;
@@ -36,13 +36,7 @@ namespace configuracoes
         StreamReader file = new StreamReader(@"./config.ini");
         while((line = file.ReadLine()) != null)
         {
-          switch (counter)
-          {
-            case 0:
-              setLanguage(line);
-            break;
-          }
-          counter++;
+          setLanguage(line);
         }
         file.Close();
       } else {
@@ -60,7 +54,14 @@ namespace configuracoes
       arquivo.Close();
     }
     public string getLanguage () {
+      Console.WriteLine(language);
+      if (language != "")
+      {
       return language;
+      } else {
+        setLanguage("us");
+        return language;
+      }
     }
     private string setLanguage(string lang) {
       language = lang;
