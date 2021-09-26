@@ -1,5 +1,6 @@
 ﻿// Usando as bibliotecas nativas do dotnet
 using System;
+using configuracoes;
 
 namespace ruan.console.csharp
 {
@@ -7,7 +8,11 @@ namespace ruan.console.csharp
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Do nothing");
+      foreach (var arg in args)
+      {
+        Console.WriteLine(arg);
+      }
+      configuracao cfg = new configuracao();
     }
   }
 }

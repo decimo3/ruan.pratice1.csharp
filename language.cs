@@ -1,5 +1,4 @@
 using System.IO;
-using configuracoes;
 namespace linguagens
 {
     public class traducoes {
@@ -7,7 +6,7 @@ namespace linguagens
         public traducoes (string lang) {
             int counter = 0;
             string line;
-            // Read the file and display it line by line.  
+            // Read the file and display it line by line.
             StreamReader file = new StreamReader(@"./lang/" + lang + ".txt");
             while((line = file.ReadLine()) != null)
             {
