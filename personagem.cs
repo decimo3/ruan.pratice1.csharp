@@ -1,14 +1,7 @@
-namespace personagem
-{
-  class personagens
-  {
-    private string nomePersonagem { get; set; }
-    private int dataNascimento { get; set; }
-    private int afinidadeForca { get; set; }
-    private int afinidadeAgil { get; set; }
-    private int afinidadeSaber { get; set; }
-
-    public personagens () {
+using defaultPerson;
+namespace personagem {
+  class personagem {
+    public personagem () {
     }
     public int criarNovoPersonagem (string nome) {
       // Questionaario para preenchimento das afinidades iniciais
