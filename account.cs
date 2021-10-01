@@ -1,7 +1,6 @@
+using personagem;
+
 namespace account {
-    class contaUsuario {
-        public contaUsuario () {
-            
-        }
-    }
+    class contaUsuario {}
+    class configUsuario {}
 }
