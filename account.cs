@@ -1,6 +1,9 @@
 using personagem;
 
 namespace account {
-    class contaUsuario {}
-    class configUsuario {}
+    class criarUsuario {}
+    class editarUsuario {}
+    class excluirUsuario {}
+    class logarUsuario {}
+    class listarPersonagens {}
 }

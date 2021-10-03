@@ -5,7 +5,7 @@ namespace configuracoes {
   class configuracao {
     private config2json config = new config2json();
     public configProps configData = new configProps();
-    private String fileName = "config.json";
+    private String fileName = "./mock/mock.config.json";
     public configuracao () {
       try {
         configData = config.getConfig(fileName);
