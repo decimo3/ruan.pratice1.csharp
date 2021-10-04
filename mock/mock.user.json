@@ -4,11 +4,37 @@
     "accountSince": "2021-11-03T20:40:00.000Z",
     "lastAccess": "2021-11-03T20:40:00.000Z",
     "configurations": [{
-        "Language": "br",
-        "termPreferences": "colored"
+        "Language": "br"
     }],
     "personages": [{
-        "personName": "Lalita"
-
+        "personName": "Lalita",
+        "createdAt": "2021-11-03T20:40:00.000Z",
+        "experiencias": {
+            "afinidadeForca": 10000000,
+            "afinidadeAgil": 100000000,
+            "afinidadeSaber": 10000000,
+            "experienciaEspada": 10000,
+            "experienciaArco": 1000000,
+            "experienciaFogo": 1000000,
+            "experienciaAgua": 1000000,
+            "experienciaTerra": 100000,
+            "experienciaVento": 100000,
+            "experienciaSanto": 100000,
+            "experienciaMaldito": 1000
+        },
+        "inventario": [],
+        "equipamento": {
+            "bracoDireito": "LongSword",
+            "bracoEsquerdo": "longShield",
+            "cabeca": "Dragonhelmet",
+            "peito": "DragonChest",
+            "calca": "DragonPants",
+            "botas": "DragonBoots",
+            "costas": "DragonWings",
+            "amuleto": "DragonWrath",
+            "anelDireito": "DragonFang",
+            "anelEsquerdo": "dragonClaw",
+            "animal": "Dog"
+        }
     }]
 }

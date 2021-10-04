@@ -1,9 +1,15 @@
-using personagem;
-
+using bancoDados;
 namespace account {
-    class criarUsuario {}
-    class editarUsuario {}
-    class excluirUsuario {}
-    class logarUsuario {}
-    class listarPersonagens {}
+  class criarUsuario {
+    public criarUsuario (string usuario, string password) {
+
+    }
+  }
+  class logarUsuario {
+    public logarUsuario (string usuario, string password) {
+
+    }
+  }
+  class editarUsuario {}
+  class excluirUsuario {}
 }
