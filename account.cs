@@ -1,14 +1,12 @@
-using bancoDados;
+using bancoDeDados;
 namespace account {
   class criarUsuario {
-    public criarUsuario (string usuario, string password) {
-
+    public criarUsuario () {
+      bancoDados user = new bancoDados();
     }
   }
   class logarUsuario {
-    public logarUsuario (string usuario, string password) {
-
-    }
+    public logarUsuario () {}
   }
   class editarUsuario {}
   class excluirUsuario {}

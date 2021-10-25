@@ -16,6 +16,7 @@ namespace wellcome {
           case 'S': 
           case 'Y': Console.WriteLine("Então vamos criar uma conta para você!");
           loop = false;
+          criarUsuario usuario = new criarUsuario();
           break;
           case '0':
           case 'n':
