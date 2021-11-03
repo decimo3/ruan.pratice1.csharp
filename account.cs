@@ -1,4 +1,5 @@
 using bancoDeDados;
+
 namespace account {
   class criarUsuario {
     public criarUsuario () {
